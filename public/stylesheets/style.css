@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.session-card,.guest-card {
+  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  transition: all .5s ease;
+  padding:0px;
+}
+.news-card-div {
+	margin:1rem 0;
+}
+.news-image{
+  width:100%
+}
+.zeroPadding{
+  padding:0px;
+}
