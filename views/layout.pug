@@ -6,23 +6,21 @@ html
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     script(type='text/javascript' src='javascripts/homepage.js')
+    script(type='text/javascript' src='javascripts/layout.js')
 
   body
     div.headerDiv(style="background-color:#1f4079;width:100%;height:60px;position:absolute;top:0px;left:0")
       img(src="https://ethz.ch/etc/designs/ethz/img/header/ethz_logo_white.svg" style="margin-left:25px;margin-top:15px;")
       span(style="margin-left:10px;color:#ffffff") FCO-Cypto
-      div.rightNav(style="float:right;margin-right:25px;width:500px;height:75px;padding-top:15px")
+      div.rightNav(style="float:right;margin-right:25px;height:75px;padding-top:15px")
         form.form-group.has-feedback.col-md-4(style="border-radius:5px;width:200px;")
           input.col-md-8(class='form-control', type='text', id='search-addon' style="width:150px",placevalue="Search")
           i(class='glyphicon glyphicon-search form-control-feedback' style="color:#ffffff;border-left:1px")
-        div.faq_div(style="display:inline;margin-right:15px;")
-          a.faq_btn(style="margin-top:20px;color:#ffffff;marign-right:5px;font-size:18px") FAQ(s)
-        div.contact_div(style="display:inline;margin-right:75px;")
-          a.contact_btn(style="margin-top:20px;color:#ffffff;marign-right:5px;font-size:18px") Contact Us
         div.login_div(style="display:inline;margin-right:5px;")
           a.login_btn(style="margin-top:20px;color:#ffffff;marign-right:5px;font-size:23px") Login
     div.navigationModal(style="width:100%;margin-top:10px;height:41px;background-color:#000000;position:absolute;left:0px")
-      i.fa.fa-bars(style="font-size:24px;margin-left:25px;margin-right:100px;position:relative;top:-10px")
+      span(onclick='openNav()')
+        i.fa.fa-bars(style="font-size:24px;margin-left:25px;margin-right:100px;position:relative;top:-10px")
       ul.nav.nav-tabs(style="display:inline-block;")
         li.active(style="margin-right:150px")
           a(href='#') Home
@@ -34,6 +32,15 @@ html
           a(href='#' style="color:#ffffff") NEWS
         li(style="margin-right:150px")
           a(href='#' style="color:#ffffff") BLOG
+    #mySidenav.sidenav
+      a.closebtn(href='javascript:void(0)' onclick='closeNav()') &times;
+      a(href='#') Research
+      a(href='#') Reports
+      a(href='#') Services
+      a(href='#') Clients
+      a(href='#') Know More!
+      a(href='#') Contact
+
 
 
 

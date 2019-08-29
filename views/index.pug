@@ -5,27 +5,57 @@ block content
 		.heroContent.col-md-8
 			.featuredHeadingDiv.col-md-12(style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block")
 				h3(style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium") FEATURED CONTENT
-			#myCarousel.carousel.slide.col-md-12(data-ride='carousel' style="padding:0px")
-				// Indicators
-				ol.carousel-indicators
-					li.active(data-target='#myCarousel', data-slide-to='0')
-					li(data-target='#myCarousel', data-slide-to='1')
-					li(data-target='#myCarousel', data-slide-to='2')
-				// Wrapper for slides
-				.carousel-inner
-					.item.active
-						img(src='https://www.w3schools.com/bootstrap/chicago.jpg', alt='Los Angeles', style='width:100%;')
-					.item
-						img(src='https://www.w3schools.com/bootstrap/chicago.jpg', alt='Chicago', style='width:100%;')
-					.item
-						img(src='https://www.w3schools.com/bootstrap/chicago.jpg', alt='New york', style='width:100%;')
-				// Left and right controls
-				a.left.carousel-control(href='#myCarousel', data-slide='prev')
-					span.glyphicon.glyphicon-chevron-left
-					span.sr-only Previous
-				a.right.carousel-control(href='#myCarousel', data-slide='next')
-					span.glyphicon.glyphicon-chevron-right
-					span.sr-only Next
+				ul.slides
+					input#img-1(type='radio' name='radio-btn' checked='')
+					li.slide-container
+						.slide
+							img(src='https://www.simag.com/fileadmin/_processed_/c/e/csm_TED_capture_d5ff4205fa.jpg')
+						.nav
+							label.prev(for='img-6') &lsaquo;
+							label.next(for='img-2') &rsaquo;
+					input#img-2(type='radio' name='radio-btn')
+					li.slide-container
+						.slide
+							img(src='https://er.ethz.ch/financial-crisis-observatory/_jcr_content/image.imageformat.carousel.573615669.jpg')
+						.nav
+							label.prev(for='img-1') &lsaquo;
+							label.next(for='img-3') &rsaquo;
+					input#img-3(type='radio' name='radio-btn')
+					li.slide-container
+						.slide
+							img(src='https://er.ethz.ch/research/_jcr_content/image.imageformat.carousel.1362109081.png')
+						.nav
+							label.prev(for='img-2') &lsaquo;
+							label.next(for='img-4') &rsaquo;
+					input#img-4(type='radio' name='radio-btn')
+					li.slide-container
+						.slide
+							img(src='http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg')
+						.nav
+							label.prev(for='img-3') &lsaquo;
+							label.next(for='img-5') &rsaquo;
+					input#img-5(type='radio' name='radio-btn')
+					li.slide-container
+						.slide
+							img(src='https://er.ethz.ch/real-estate-observatory/_jcr_content/image.imageformat.carousel.1036408943.jpg')
+						.nav
+							label.prev(for='img-4') &lsaquo;
+							label.next(for='img-6') &rsaquo;
+					input#img-6(type='radio' name='radio-btn')
+					li.slide-container
+						.slide
+							img(src='http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg')
+						.nav
+							label.prev(for='img-5') &lsaquo;
+							label.next(for='img-1') &rsaquo;
+					li.nav-dots
+						label#img-dot-1.nav-dot(for='img-1')
+						label#img-dot-2.nav-dot(for='img-2')
+						label#img-dot-3.nav-dot(for='img-3')
+						label#img-dot-4.nav-dot(for='img-4')
+						label#img-dot-5.nav-dot(for='img-5')
+						label#img-dot-6.nav-dot(for='img-6')
+
 		.newsDiv.col-md-4
 			.featuredHeadingDiv.col-md-12(style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block")
 				h3(style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium") NEWS
@@ -40,37 +70,30 @@ block content
 				div.session-card.col-xs-12.zeroPadding(style="padding:0px")
 					a(href="#")
 						div.col-md-3.imageDiv(style="padding:0px;margin:0px;width:25%")
-							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg')
+							img.news-image(src='https://news.bitcoin.com/wp-content/uploads/2019/08/india-boosts-economy.png')
 						div.newsHeading.col-md-9
-							span(style="margin-left:5px") ‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO
+							span(style="margin-left:5px") Crypto Can Boost Indian Economy - How Banning Will Hurt it
 			div.col-xs-6.col-md-12.news-card-div
 				div.session-card.col-xs-12.zeroPadding(style="padding:0px")
 					a(href="#")
 						div.col-md-3.imageDiv(style="padding:0px;margin:0px;width:25%")
-							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg')
+							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9jNTk5OWQyZWFmMmEzZDg1ZjIzODk1NTUwYzJhMWY4OC5qcGc=.jpg')
 						div.newsHeading.col-md-9
-							span(style="margin-left:5px") ‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO
+							span(style="margin-left:5px") Hong Kong Businesses Begin Adopting Bitcoin as a Form of Protest
 			div.col-xs-6.col-md-12.news-card-div
 				div.session-card.col-xs-12.zeroPadding(style="padding:0px")
 					a(href="#")
 						div.col-md-3.imageDiv(style="padding:0px;margin:0px;width:25%")
-							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg')
+							img.news-image(src='https://financialpostcom.files.wordpress.com/2019/08/bit4.jpg?w=840&h=630&crop=1&quality=80&strip=all')
 						div.newsHeading.col-md-9
-							span(style="margin-left:5px") ‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO
+							span(style="margin-left:5px") Bitcoin is surging. Could smaller rivals be due for rallies, too?
 			div.col-xs-6.col-md-12.news-card-div
 				div.session-card.col-xs-12.zeroPadding(style="padding:0px")
 					a(href="#")
 						div.col-md-3.imageDiv(style="padding:0px;margin:0px;width:25%")
-							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg')
+							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9hODI3MmY1N2NlMTNiMjQ1Yzk4NGE5ZWYwMmY0MDRhNy5qcGc=.jpg')
 						div.newsHeading.col-md-9
-							span(style="margin-left:5px") ‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO
-			div.col-xs-6.col-md-12.news-card-div
-				div.session-card.col-xs-12.zeroPadding(style="padding:0px")
-					a(href="#")
-						div.col-md-3.imageDiv(style="padding:0px;margin:0px;width:25%")
-							img.news-image(src='https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg')
-						div.newsHeading.col-md-9
-							span(style="margin-left:5px") ‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO
+							span(style="margin-left:5px") 3 Key Indicators Suggest Bitcoin Price Is Ready for a Massive Move
 		.welcomeContent.col-md-12
 			.featuredHeadingDiv.col-md-12(style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block")
 				h3(style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium") WELCOME
